@@ -1,0 +1,83 @@
+.grid{
+    border: 1px dashed red;
+    display: grid;
+    grid-template-columns: repeat(3, [col] 1fr);
+    grid-template-rows: repeat(2, [row] 1fr);
+    gap: 5px;
+}
+.grid__item{
+    border: 1px dotted rgb(251, 123, 255);
+    min-height: 150px;
+    font-size: 25px;
+    text-align: center;
+}
+.grid__item1{
+    background-color: rgb(178, 252, 227);
+    grid-column: col 1 / col 2;
+    grid-row: row 1 / row 3;
+}
+.grid__item2{
+    background-color: rgb(252, 178, 209);
+    grid-column: col 2 / col 3;
+    grid-row: row 1 / row 3;
+}
+.grid__item3{
+    background-color: rgb(247, 252, 178);
+    grid-column: col 3 / col 4;
+    grid-row: row 1 / row 3;
+}
+.grid__item4{
+    background-color: rgb(178, 252, 227);
+    grid-column: col / col;
+    grid-row: row / row;}
+.grid__item5{
+    background-color: rgb(178, 252, 227);
+    grid-column: col / col;
+    grid-row: row / row;}
+.grid__item6{
+    background-color: rgb(178, 252, 227);
+    grid-column: col / col;
+    grid-row: row / row;}
+.grid__item7{
+    background-color: rgb(178, 252, 227);
+    grid-column: col / col;
+    grid-row: row / row;}
+.grid__item8{
+    background-color: rgb(178, 252, 227);
+    grid-column: col / col;
+    grid-row: row / row;}
+.grid__item9{
+    background-color: rgb(178, 252, 227);
+    grid-column: col / col;
+    grid-row: row / row;}
+.grid__item10{
+
+    background-color: rgb(178, 252, 227);
+    grid-column: col / col;
+    grid-row: row / row;}
+
+
+@media screen and (max-width: 800px){
+    .grid{
+        border: 1px dashed red;
+        display: grid;
+        grid-template-columns: repeat(2, [col] 1fr);
+        grid-template-rows: repeat(3, [row] 1fr);
+        gap: 5px;
+    }
+    .grid__item1{
+        background-color: rgb(178, 252, 227);
+        grid-column: col 1 / col 3;
+        grid-row: row 1 / row 2;
+    }
+    .grid__item2{
+        background-color: rgb(252, 178, 209);
+        grid-column: col 1 / col 3;
+        grid-row: row 2 / row 3;
+    }
+    .grid__item3{
+        background-color: rgb(247, 252, 178);
+        grid-column: col 1 / col 3;
+        grid-row: row 3 / row 5;
+    }
+}
